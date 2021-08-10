@@ -4,7 +4,7 @@ import string
 import json
 
 app = Flask(__name__)
-with open("/settings/settings.json","r") as file:
+with open("./settings/settings.json","r") as file:
     settings = json.load(file)
     base_url = settings["your_domain_or_url"]
 
